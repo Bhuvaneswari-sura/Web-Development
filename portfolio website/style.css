@@ -1,0 +1,452 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 4px rgb(0,0,0,0.1);
+    gap:60px;
+    position: sticky;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    list-style: none;
+    gap:70px;
+}
+nav img{
+    border-radius: 50%;
+    height: 60px;
+} 
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: purple;
+    text-underline-offset: 4px;
+    transition: all 0.3s ease-in-out;
+}
+nav .cbutton{
+    height:30px;
+    width: 150px;
+    text-align:justify;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+
+}
+.cbutton:hover{
+    background-color: purple;
+    color: white;
+}
+#menu{
+    display: none;
+}
+nav span{
+    text-align: center;
+}
+nav .logo{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 830px;
+    background-color: #c0ffc0;
+}
+.main h4{
+     font-size: 40px;
+}
+.main h5{
+    font-size: 25px;
+}
+.main .left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.right img {
+   height: 500px;
+}
+.main .left button{
+    width:150px;
+    height:40px;
+    text-align: center;
+    background-color: #a8f28b;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+.main button:hover{
+    background-color: purple;
+    color: white;
+}
+.skills{
+    line-height: 55px;
+    margin-top: 90px;
+    margin-left: 30px;
+    height: 800px;
+    padding: 30px;
+}
+.skills .items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    
+}
+.skills .items .item{
+    font-size: 25px;
+    border: 1px solid transparent;
+    height: 300px;
+    width: 30%;
+    background-color:  #c0ffc0;
+    line-height: 35px;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: justify;
+    padding: 20px;
+
+}
+.skills .items .item i{
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-size: 40px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+ .skills .item h3{
+    font-size: 30px;
+ }
+ .skills h5{
+   font-size: 30px;
+ }
+ .skills h4{
+   font-size: 50px;
+ }
+ .skills .items .item:hover{
+    box-shadow: 0px 5px 4px purple;
+ }
+ .about{
+    height: 900px;
+    background-color: #c0ffc0;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+    padding: 50px;
+ }
+ .about .right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 60%;
+ }
+ .about .right h3{
+    font-size: 40px;
+    }
+ .about .left img{
+    height: 500px;
+ }
+ .portfolio{
+    padding: 20px;
+    height: 800px;
+ }
+ .portfolio .items{
+    display: flex;
+    gap: 30px;
+    height: 800px;
+    justify-content: space-around;
+    align-items: center;
+ }
+ .portfolio .items .item img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+    padding: 0px;
+ }
+ .portfolio .items .item{
+    border: 0px solid transparent;
+    background-color: #c0ffc0;
+    box-shadow: 0px 0px 2px #769c65;
+    width: 30%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+    border-radius: 5px;
+ }
+ .portfolio .items .item:hover{
+    box-shadow: 0px 5px 4px purple;
+ }
+ .portfolio a{
+    text-decoration: none;
+    color: black; 
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+ }
+ .portfolio a:hover{
+    color: purple;
+ } 
+ footer img{
+    border-radius: 50%;
+    height: 60px;
+} 
+footer{
+    padding: 30px;
+}
+footer .top{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+footer .top ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+}
+footer .top ul li:hover{
+    color: purple;
+    cursor: pointer;
+}
+footer .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .bottom ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+footer .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* making website responsive */
+@media  screen and (max-width:1200px) {
+    nav ul{
+        gap:50px;
+    }
+    .main img{
+        height: 500px;
+    }
+    .main .left{
+       padding: 10px 30px;
+    }
+    .main .left h4{
+        font-size: 35px;
+    }
+    .skills .item{
+        line-height: 15px;
+    } 
+    .about img{
+        width: 650px;
+    }
+    .about .right h3{
+    font-size: 30px;
+    }
+    .about .right p{
+        font-size: 18px;
+    }
+    .portfolio .item{
+        width: 25%;
+        height: 510px;
+    }
+    footer .top ul{
+        gap:25px;
+    }
+}  
+@media screen and (max-width: 1080px){
+    nav ul{
+        gap:40px;
+    }
+    .main img{
+        height: 450px;
+    }
+    .main .left{
+       padding: 10px 30px;
+    }
+    .main .left h4{
+        font-size: 35px;
+    }
+    .skills .item{
+        line-height: 10px;
+        flex-wrap: wrap;
+    } 
+    .skills .items .item i{
+        height: 40px;
+        width: 40px;
+    }
+    .skills .item h3{
+        font-size: 25px;
+     }
+     .skills h5{
+        font-size: 25px;
+      }
+      .skills h4{
+        font-size: 40px;
+      }
+    .skills .items .item p{
+        line-height: 25px;
+    }
+    .about img{
+        height: 500px;
+    }
+    .about .right h3{
+    font-size: 25px;
+    }
+    .about .right p{
+        font-size: 20px;
+    }
+    .portfolio .item{
+        width: 30%;
+        height: 450px;
+    }
+    footer .top ul{
+        gap:20px;
+    }
+    footer .bottom ul{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 980px){
+     nav ul{
+        gap:20px;
+     }
+     .about .left img{
+        height: 425px;
+     }
+     .about {
+        flex-direction: column;
+     }
+}
+@media  screen and (max-width:790px) {
+    nav{
+        justify-content: space-between;
+        padding: 0 42px;
+    }
+
+    nav ul{
+        display: none;
+    }
+    nav button#menu{
+        display: flex;
+    }
+    nav.open .logo{
+        display: none;
+    }
+     nav .cbutton{
+        display: none;
+     }
+    nav.open ul{
+        display: flex;
+    } 
+    .main .left h4{
+        font-size: 30px;
+    }
+    .main .left h5{
+        font-size: 20px;
+    }
+    .skills .items{
+        display: flex;
+        flex-direction: column;
+    }
+    .skills .items .item{
+        width: 80%;
+    }
+    .skills{
+        height: 1200px;
+    }
+    .portfolio .items {
+        flex-wrap: wrap;
+    }
+    .portfolio .items .item{
+        width: 60%;
+    }
+    .portfolio{
+        height: 1700px;
+    }
+    footer .top{
+        flex-direction: column;
+    }
+    footer .top ul{
+        margin: 25px;
+        gap: 70px;
+    }
+    footer .top .links{
+        margin: 25px;
+        display: flex;
+        gap:90px;
+    }
+    footer .bottom  li{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .main .left h4{
+        font-size: 25px;
+    }
+    .main{
+        height: 600px;
+    }
+    .main .left h5{
+        font-size: 18px;
+    }
+    .main .left {
+        margin-left: 50px;
+    }
+    .main .right img{
+        height: 300px;
+        margin-right: 25px;
+    }
+    nav .cbutton{
+        height:20px;
+        width: 100px;
+        padding: 15px;
+        padding-bottom: 30px;
+        font-size: 12px;
+    }
+    footer .top ul{
+        gap: 50px;
+    }
+    footer .top .links{
+        gap: 60px;
+    }
+    footer .bottom{
+        gap: 30px;
+    }
+     footer .bottom p{
+        font-size: 17px;
+     }
+}

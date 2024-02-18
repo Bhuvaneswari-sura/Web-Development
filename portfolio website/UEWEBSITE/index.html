@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download UltraEdit text editor</title>
+    <style>
+        *{
+          margin: 0;
+          padding: 0;
+        }
+        header{
+          width: 100%;  
+          height: 200px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          column-gap: 800px;
+
+        }
+        .navbar{
+            display: flex;
+            /* display: flex; */
+            justify-content: flex-end;
+            align-items: center;
+            gap: 50px;
+        }
+        .img1{
+            align-self: flex-start;
+        }
+        .navbar ul{
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 100px;
+           
+        }
+        .matter{
+            margin: auto;
+            text-align: center;
+
+        }
+        .content1{
+            font-size: 64px;
+            display: flex;
+            justify-content: center;
+            /* justify-content: baseline; */
+            gap: 20px;
+        }
+        .content1 img{
+            padding-top: 7px;
+        }
+        .content2{
+            font-size: 35px;
+            /* line-height: 50px; */
+        }
+        button{
+            height: 55px;
+            /* border: none; */
+            width: 350px;
+            border-radius: 5px;
+            background-color: #54abc5;
+            text-align: center;
+            font-size: 17px;
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+        .logopart{
+           display: flex;
+           margin: auto;
+           text-align: center;
+           padding-left: 300px;
+           /* justify-content: flex-start; */
+        }
+        .logodesc{
+            padding-top: 10px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .DU{
+            font-size: 30px;
+        }
+        .logodesc a{
+                text-decoration: none;
+                color: black;
+        }
+        .buttons{
+            display: flex;
+            gap: 10px;
+        }
+        .button32 button{
+            height: 50px;
+            width: 150px;
+            background-color: #54abc5;
+            color: white;
+        }
+        .button64 button{
+            height: 50px;
+            width: 150px;
+            background-color: #69df5e;
+            color: white;
+        }
+        .blocks{
+            padding-left: 350px;
+            margin: auto;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 400px 400px 400px;
+            /* column-gap: 5px; */
+            row-gap: 25px;
+        }
+        .block{
+            height: 180px;
+            width: 350px;
+            background-color: rgb(240, 240, 240);
+            border-radius: 5px;
+            display: grid;
+            grid-template-rows: 1fr 2fr;
+            justify-content: center;
+            align-items: center;
+        }
+        .formblock{
+            /* display: block; */
+            display: flex;
+            width: 100vw;
+            color: white;
+            background-color: black;
+            height: 900px;
+            position: relative;
+        }
+
+        .form{
+            float: right;
+            margin-top: 35px;
+            margin-left: 150px ;
+            padding: 20px;
+            height: 300px;
+            width: 400px;
+            line-height: 30px;
+            text-align: center;
+            padding: 5px;
+            background-color: white;
+            border-radius: 20px;
+        }
+        .Subscribe{
+            margin-top: 15px;
+            color: #54abc5;
+            font-size: 30px;
+        }
+        [name="enter"]{
+            margin-top: 25px;
+            color: black;
+            font-size: 20px;
+        }
+        [name="txt1"]{
+           font-size: 30px; 
+           font-weight:bold ;
+        }
+        [name="txt2"]{
+           font-size: 20px;
+         } 
+        .b1{
+            padding-top: 200px;
+            padding-left: 400px ;
+            text-align: center;
+            line-height: 30px;
+            height: 200px;
+            width: 500px;
+        }
+        [type="text"]{
+            height: 50px;
+            width: 300px;
+        }
+        .fbutton{
+            margin-top: 20px;
+            font-size: 30px;
+        }
+        .fdown{
+            height: 500px;
+            width: 80%;
+            position: absolute;
+            bottom: 0px;
+            left: 300px;
+            top: 450px;
+            line-height: 45px;
+        }
+        .fdown a{
+            color: #54abc5;
+            text-decoration: none;
+        }
+        .fdown p{
+            font-size: 20px;
+        } .fdown h2{
+            font-size: 30px;
+        }
+        .links{
+            display: grid;
+            grid-template-columns: 300px 300px 300px 300px;
+            justify-content: center;
+            align-content: center;
+        }
+        .links ul li a{
+            text-decoration: none;
+            color: black;
+            line-height: 30px;
+            font-size: 20px;
+        }
+        .links ul li{
+            list-style: none;
+        }
+        .l1{
+            grid-column: 1/2;
+        }
+        .l2{
+            grid-column: 2/3;
+        }
+        .l3{
+            grid-column: 3/4;
+        }
+        .l4{
+            grid-column: 4/5;
+        }
+        .links ul li h3{
+            font-size: 25px;
+            padding-top: 70px;
+            padding-bottom: 40px;
+        }
+        .ns h2{
+            font-size: 25px;
+            padding-top: 70px;
+            padding-bottom: 40px;    
+        }
+        .ns *{
+            font-size: 20px;
+        }
+        .ns>p{
+            line-height: 20px;
+        }
+        [placeholder="Enter email address..."]{
+            font-size: 20px;
+            text-align: center;
+        }
+        .ns button{
+            text-align: center;
+            width: 350px;
+        }
+        .ns form input{
+             width: 350px;
+        }
+        .foot{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .socialweb img{
+            width: 30px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="imag1">
+            <img src="UE.png" alt="Uestart">
+        </div>
+        <div class="navbar">
+            <ul>
+                <li>Product</li>
+                <li>Pricing</li>
+                <li>Resources</li>
+                <li>About us</li>
+            </ul>
+            <img src="A.png" alt="language">
+        </div>
+    </header>
+    <main>
+        
+        <div class="matter">
+            <div class="content1">
+                <p>Download <b>UltraEdit</b> for Windows</p>
+                <a href="https://www.g2.com/products/ultraedit/reviews"><img src="Redbutton.png" alt="Link to g2.com"></a>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="content2"> 
+                    <p>Download and try UltraEdit before you buy it! This download includes the full Windows <br>version of the text editor.</p>
+                    <br>
+                </div>
+                    <div class="button">
+                    <a href="https://www.ultraedit.com/downloads/uex-thank-you/"><button>DOWNLOAD MAC OR LINUX VERSION</button></a>
+                    <br>
+                    <br>
+                    <div class="logopart">
+                        <img src="uelogo.png" alt="UELogo">
+                        <div class="logodesc">
+                            <p class="DU">
+                                Download UltraEdit
+                            </p>
+                            <p>
+                                v2023.2(released 12/15/2023) |
+                            </p>
+                            <a href="https://www.ultraedit.com/updates/uehotfix/">Hotfix</a>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="blocks">
+                <div class="block">
+                    English
+                    <div class="buttons">
+                        <div class="button32">
+                            <a href=""><button>Download 32-bit</button></a>
+                        </div>
+                        <div class="button64">
+                            <a href=""><button>Download 64-bit</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                        Deutsch
+                        <div class="buttons">
+                            <div class="button32">
+                                <a href=""><button>Download 32-bit</button></a>
+                            </div>
+                            <div class="button64">
+                                <a href=""><button>Download 64-bit</button></a>
+                            </div>
+                        </div>
+                </div>
+                <div class="block">
+                    Italiano
+                    <div class="buttons">
+                        <div class="button32">
+                            <a href=""><button>Download 32-bit</button></a>
+                        </div>
+                        <div class="button64">
+                            <a href=""><button>Download 64-bit</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    Espansol
+                    <div class="buttons">
+                        <div class="button32">
+                            <a href=""><button>Download 32-bit</button></a>
+                        </div>
+                        <div class="button64">
+                            <a href=""><button>Download 64-bit</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    francais
+                    <div class="buttons">
+                        <div class="button32">
+                            <a href=""><button>Download 32-bit</button></a>
+                        </div>
+                        <div class="button64">
+                            <a href=""><button>Download 64-bit</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    Portugues brasilerio
+                    <div class="buttons">
+                        <div class="button32">
+                            <a href=""><button>Download 32-bit</button></a>
+                        </div>
+                        <div class="button64">
+                            <a href=""><button>Download 64-bit</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    japanese
+                    <div class="buttons">
+                        <div class="button32">
+                            <a href=""><button>Download 32-bit</button></a>
+                        </div>
+                        <div class="button64">
+                            <a href=""><button>Download 64-bit</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    korean
+                    <div class="buttons">
+                        <div class="button32">
+                            <a href=""><button>Download 32-bit</button></a>
+                        </div>
+                        <div class="button64">
+                            <a href=""><button>Download 64-bit</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    chinese
+                    <div class="buttons">
+                        <div class="button32">
+                            <a href=""><button>Download 32-bit</button></a>
+                        </div>
+                        <div class="button64">
+                            <a href=""><button>Download 64-bit</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    traditional chinese
+                    <div class="buttons">
+                        <div class="button32">
+                            <a href=""><button>Download 32-bit</button></a>
+                        </div>
+                        <div class="button64">
+                            <a href=""><button>Download 64-bit</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formblock">
+                <div class="b1">
+                 <p name="txt1">Join the UltraEdit newsletter</p>
+                 <br>
+                     <p name="txt2">Sign up for our newsletter and receive emails for the latest news, blogs, and special deals on UltraEdit.</p>
+                </div>
+                 <div class="form">
+                     <p class="Subscribe">Subscribe to our emails</p>
+                     <p name="enter">Enter email address</p>
+                     <input type="text">
+                     <div class="fbutton">
+                        <a href=""><button>SIGN UP</button></a>
+                    </div>
+                 </div>
+                 <div class="fdown">
+                    <h2>EXE or MSI?</h2>
+                    <p>
+                              The EXE builds of our products are the preferred download for most of our users, running Windows 8.1 and later.
+                    </p>
+                    <p> We make MSI builds available for bulk or silent deployments (command line, GPO, SCCM, etc.). <a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/msi/"> Get the UltraEdit MSI installer.</a></p>
+                    <h2>Free trial period</h2>
+                    <p>
+                        This application comes with a free, fully functional 30 day trial period. After the trial period expires, you must <a href="https://www.ultraedit.com/catalog/#ultraedit">purchase a license</a> to continue using it.
+                    </p>
+                 </div>
+         </div>
+        </main>
+        <footer>
+              <div class="links">
+                <div class="l1">
+                    <ul>
+                        <li><h3>What’s your language?</h3></li>
+                        <li><a href="https://www.ultraedit.com/products/ultraedit/features/">Code editor(General)</a></li>
+                        <li><a href="https://www.ultraedit.com/products/ultraedit/">Text editor</a></li>
+                        <li><a href="https://www.ultraedit.com/language/hex-editor/">Hex</a></li>
+                        <li><a href="https://www.ultraedit.com/language/html-editor/">HTML</a></li>
+                        <li><a href="https://www.ultraedit.com/language/css-editor/">CSS</a></li>
+                        <li><a href="https://www.ultraedit.com/language/edit-unix-shell-scripts/">Unix shell scripts</a></li>
+                        <li><a href="https://www.ultraedit.com/language/pl-sql-editor/">PL/SQL</a></li>
+                        <li><a href="https://www.ultraedit.com/products/ultraedit/user-type/medical/">EDI</a></li>
+                        <li><a href="https://www.ultraedit.com/language/c-editor/">C++</a></li>
+                        <li><a href="https://www.ultraedit.com/language/php-editor/">PHP</a></li>
+                        <li><a href="https://www.ultraedit.com/language/xml-editor/">XML</a></li>
+                        <li><a href="https://www.ultraedit.com/language/markdown-editor/">Markdown</a></li>
+                        <li><a href="https://www.ultraedit.com/language/sas-editor/">SAS</a></li>
+                        <li><a href="https://www.ultraedit.com/language/visual-basic-editor/">Visual Basic</a></li>
+                    </ul>
+                </div>
+                <div class="l2">
+                    <ul>
+                        <li><h3>What type of user are you?</h3></li>
+                        <li><a href="https://www.ultraedit.com/products/ultraedit/user-type/programmer/">Programmer/Developer</a></li>
+                        <li><a href="https://www.ultraedit.com/products/ultraedit/user-type/web-developer/">Web Developer</a></li>
+                        <li><a href="https://www.ultraedit.com/products/ultraedit/user-type/database-manager/">Database Manager</a></li>
+                        <li><a href="https://www.ultraedit.com/products/ultraedit/user-type/system-administrator/">System Administrator</a></li>
+                        <li><a href="https://www.ultraedit.com/products/ultraedit/user-type/technical-writer/">Technical Writer</a></li>
+                        <li><a href="https://www.ultraedit.com/products/ultraedit/user-type/editor/">Editor / Publisher</a></li>
+                        <li><a href="https://www.ultraedit.com/products/ultraedit/user-type/medical/">Medical / Pharmaceutical</a></li>
+                    </ul>
+                </div>
+                <div class="l3">
+                    <ul>
+                        <li><h3>General</h3></li>
+                       <li><a href="https://www.ultraedit.com/company/contact-us/">Contact</a></li>
+                       <li><a href="https://www.ideracorp.com/legal/UltraEdit">License Agreement(EULA)</a></li>
+                       <li><a href="https://www.ultraedit.com/end-of-life/">End of Life Policy</a></li>
+                       <li><a href="https://www.ultraedit.com/libraries-trademarks-patents/">Libraries and Patents</a></li>
+                       <li><a href="https://www.ultraedit.com/information-policy/">Informantion Policy</a></li>
+                       <li><a href="https://www.ideracorp.com/legal/privacypolicy?sc_lang=en">Privacy Policy</a></li>
+                       <li><a href="https://www.ultraedit.com/uninstall/">Uninstall Instructions</a></li>
+                       <li><a href="https://www.ultraedit.com/sitemap_index.xml">Sitemap</a></li>
+                       <li><a href="https://www.ideracorp.com/legal/UltraEdit">Legal</a></li>
+                    </ul>
+                </div>
+                <div class="ns">
+                    <h2>Subscribe to Newsletter</h2>
+                    <p>Get the latest news on new releases, event, and developments.</p>
+                    <br>
+                    <form action="post">
+                        <input type="text" name="nstxt" placeholder="Enter email address...">
+                    </form>
+                    <br>
+                    <button>Subscribe</button>
+                </div>
+            </div>
+            <div class="foot">
+                <div class="bleft">
+                    <img src="UE.png" alt="UEimg">
+                    <p>&copy;2024 UltraEdit. All rights reserved</p>
+                </div>
+                <div class="socialweb">
+                    <a href="https://twitter.com/ultraedit?lang=en"><img src="x.png" alt="twitter"></a>
+                    <a href="https://github.com/IDMComputerSolutions"><img src="GitHub.png" alt="github"></a>
+                    <a href="https://www.youtube.com/channel/UCVdjJ5uRBgchJFRS7G6LjrQ"><img src="utubelogo.png" alt="youtube"></a>
+                    <a href="https://www.facebook.com/UltraEdit"><img src="f.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com/ultraedit_idm/"><img src="insta.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/company/idm-computer-solutions/"><img src="linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://www.reddit.com/r/ultraedit/"><img src="reddit.png" alt="Reddit"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
