@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(94, 92, 92);
+}
+input{
+    height:100px;
+    width:370px;
+    background-color: aqua;
+    border-radius: 5px;
+    font-size: 30px;
+    margin: 20px 10px;
+}
+.outlay{
+    border: 2px solid rgb(224, 223, 223);
+    box-shadow: 2px 2px 3px rgb(224, 223, 223);
+    height: 650px;
+    width: 400px;
+    margin: auto;
+    margin-top: 100px;
+}
+.buttons{
+    margin-left: 5px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px ;
+    column-gap: 3px;
+    row-gap: 3px;
+}
+button{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+}
+.operator{
+     background-color: #38b8db;
+}
+.button-AC , .button-Del{
+    background-color: #dc7676;
+}
